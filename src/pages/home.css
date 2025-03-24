@@ -1,0 +1,97 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.heropettern {
+    background-color: rgb(255, 245, 226);
+    background-image: url(../assets/heropeternImg.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.heroimg {
+    transition: transform 0.3s ease-in-out;
+}
+
+.heroimg:hover {
+    transform: scale(1.1);
+}
+
+.herodots {
+    background-image: url(../assets/herodots.png);
+}
+
+.serviceImg {
+    background-color: rgb(253, 212, 212);
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out;
+}
+
+.animate-service-card {
+    animation: slide-in 0.5s ease-out;
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1    ;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+.animate-blink {
+    animation: blink 3s infinite;
+}
+
+.animate-slide-left {
+    opacity: 1 !important;
+    animation: slide-left 1s ease-out;
+}
+
+.animate-slide-right {
+    opacity: 1 !important;
+    animation: slide-right 1s ease-out;
+}
+
+.navbar {
+  transition: background-color 0.3s, color 0.3s;
+}

@@ -1,0 +1,23 @@
+.project-img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.projectscard:hover .project-img {
+  transform: scale(105%);
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  opacity: 1 !important;
+  animation: slide-in 1s ease-out;
+}
