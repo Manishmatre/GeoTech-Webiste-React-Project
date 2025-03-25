@@ -2,12 +2,15 @@ import React from 'react'
 import Header from '../../components/Header'
 import Projects from '../Projects'
 import Footer from '../../components/Footer'
+import PageHeading from '../../components/PageHeading'
 
-const AllProjects = () => {
+const AllProjects = (heading) => {
   return (
    <div>
      <Header/>
-     <div>
+     <PageHeading heading="All Projects"/>
+     <div className='py-20'>
+     
          <Projects/>
      </div>
      <Footer/>

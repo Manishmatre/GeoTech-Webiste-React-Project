@@ -57,7 +57,13 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={`navbar z-50 fixed left-0 top-0 flex items-center justify-between px-6 md:px-16 lg:px-20 w-screen h-20 ${isScrolled ? "shadow" : ""}  transition-all duration-300 ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
+    <div
+      className={`navbar z-50 fixed left-0 top-0 flex items-center justify-between px-6 md:px-16 lg:px-20 w-screen h-20 ${
+        isScrolled ? "shadow" : ""
+      }  transition-all duration-300 ${
+        isScrolled ? "bg-white" : "bg-[#fafafa5d]"
+      }`}
+    >
       <div className="flex items-center mb-6 pt-4 md:pt-0  md:mb-0">
         <Link to="/">
           <img alt="Buildo logo" className="mr-2 w-16" src={Logo} />
@@ -72,7 +78,13 @@ const Header = () => {
             <li key={index}>
               <a
                 href={links.link}
-                className={`navlink text-md duration-200 hover:text-orange-600 font-semibold py-7 hover:border-b-3 border-orange-500 transition-normal  ${isScrolled ? 'text-gray-600' : 'text-gray-600'} ${activeSection === links.link.substring(1) ? "text-orange-600" : ""}`}
+                className={`navlink text-md duration-200 hover:text-orange-600 font-semibold py-7 hover:border-b-3 border-orange-500 transition-normal  ${
+                  isScrolled ? "text-gray-600" : "text-gray-600"
+                } ${
+                  activeSection === links.link.substring(1)
+                    ? "text-orange-600"
+                    : ""
+                }`}
               >
                 {links.text}
               </a>
@@ -93,7 +105,11 @@ const Header = () => {
         onClick={toggleNav}
       >
         <h1 className="text-2xl cursor-pointer px-3 py-2 rounded-lg hover:bg-gray-100">
-          <i className={`fa-solid font-light hover:text-gray-700 fa-bars ${isScrolled ? 'text-orange-500' : 'text-gray-700  '}`}></i>
+          <i
+            className={`fa-solid font-light hover:text-gray-700 fa-bars ${
+              isScrolled ? "text-orange-500" : "text-gray-700  "
+            }`}
+          ></i>
         </h1>
       </button>
 
@@ -107,7 +123,11 @@ const Header = () => {
               >
                 <a
                   href={link.link}
-                  className={`navlink block text-md hover:text-blue-400 font-semibold transition-normal ${isScrolled ? 'text-gray-800' : 'text-white'} ${activeSection === link.link.substring(1) ? "text-orange-600" : ""}`}
+                  className={`navlink block text-md hover:text-orange-400 font-semibold transition-normal  text-gray-800 ${
+                    activeSection === link.link.substring(1)
+                      ? "text-orange-600"
+                      : ""
+                  }`}
                 >
                   {link.text}
                 </a>
@@ -116,9 +136,9 @@ const Header = () => {
             <div className="w-full px-10 py-2">
               <a
                 href="#contact"
-                className="bg-orange-600 hover:bg-[#4a7a6a] text-white w-full block text-center px-6 py-3 rounded"
+                className="bg-orange-600 cursor-pointer duration-400 hover:bg-[#4a7a6a] transition-normal text-white px-6 py-3 rounded"
               >
-                Get a Quote
+                Contact Us
               </a>
             </div>
           </ul>

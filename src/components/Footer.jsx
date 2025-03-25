@@ -51,7 +51,7 @@ const Footer = () => {
               <a href="/">
                 <img alt="GeoTech logo" className="mr-2 w-14 h-14 rounded-full" src={Logo} />
               </a>
-              <span className="text-2xl font-bold text-gray-200">
+              <span className="text-2xl pl-3 font-bold text-gray-200">
                 GeoTech Survey & Construction
               </span>
             </div>
