@@ -32,11 +32,11 @@ const footerSections = [
   {
     title: 'Other Pages',
     links: [
-      { name: 'Course', href: '/course' },
-      { name: 'Training', href: '/training' },
-      { name: 'Career', href: '#' },
-      { name: 'Licenses', href: '#' },
-      { name: 'Policies', href: '#' }
+      { name: 'Course', href: '#f' },
+      { name: 'Training', href: '#f' },
+      { name: 'Career', href: '#f' },
+      { name: 'Licenses', href: '#f' },
+      { name: 'Policies', href: '#f' }
     ]
   }
 ];

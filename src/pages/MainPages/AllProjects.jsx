@@ -6,7 +6,7 @@ import PageHeading from '../../components/PageHeading'
 
 const AllProjects = (heading) => {
   return (
-   <div>
+   <div id='allprojects'>
      <Header/>
      <PageHeading heading="All Projects"/>
      <div className='py-20'>
