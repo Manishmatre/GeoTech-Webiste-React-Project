@@ -98,7 +98,7 @@ const ServicesSection = () => {
               </h3>
               <p className="py-2">{service.description}</p>
               <a
-                for="#"
+                href="/all-services"
                 className={`mt-4 inline-block font-medium text-orange-600 hover:text-[#4a7a6a]`}
               >
                 View Details →
@@ -107,9 +107,9 @@ const ServicesSection = () => {
           ))}
         </div>
       <div className="pt-10">
-      <Link to="/all-services" className="mt-10 px-6 py-2 border border-white text-white rounded-full cursor-pointer hover:bg-orange-500 hover:text-white transition-all">
+      <a href="/all-services" className="mt-10 px-6 py-2 border border-white text-white rounded-full cursor-pointer hover:bg-orange-500 hover:text-white transition-all">
           All Services →
-        </Link>
+        </a>
       </div>
       </div>
     </section>

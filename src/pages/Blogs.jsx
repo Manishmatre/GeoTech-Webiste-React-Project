@@ -54,7 +54,7 @@ const Blogs = () => (
         ))}
       </div>
       <div className="text-center mt-8">
-        <a className="inline-block duration-400 bg-transparent border border-gray-300 text-white py-2 px-6 rounded-full hover:bg-orange-500" href="#">
+        <a className="inline-block duration-400 bg-transparent border border-gray-300 text-white py-2 px-6 rounded-full hover:bg-orange-500" href="/all-blogs">
           View More <i className="fas fa-arrow-right ml-2"></i>
         </a>
       </div>

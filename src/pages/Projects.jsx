@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import ProjectImg from "../assets/heroimg.png";
 import "./projects.css";
-import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -82,7 +81,7 @@ const Projects = () => {
                   {project.title}
                 </h3>
                 <a
-                  href="#"
+                  href="/all-projects"
                   className="text-white px-5 py-2 rounded-lg bg-amber-500 duration-400 "
                 >
                   View Details →
@@ -93,12 +92,12 @@ const Projects = () => {
         </div>
 
         <div className="py-10">
-          <Link
-            to="/all-projects"
+          <a
+            href="/all-projects "
             className="mt-10 px-6 py-2 border border-white text-white rounded-full cursor-pointer hover:bg-orange-500 hover:text-white transition-all"
           >
             All Projects →
-          </Link>
+          </a>
         </div>
       </div>
     </div>

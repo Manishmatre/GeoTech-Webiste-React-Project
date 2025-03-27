@@ -39,7 +39,7 @@ const Home = () => {
               GeoTech Survey & Construction
             </span>
           </h1>
-          <p className="text-md md:text-lg leading-6 text-gray-400  mt-4 lg:pr-24">
+          <p className="text-md md:text-lg leading-6 text-gray-600  mt-4 lg:pr-24">
             At GEOTECH Survey and Construction, we bring expertise and innovation to the field of engineering, construction, and surveying. Whether it’s road and bridge surveys, project data analysis, or professional training, we ensure excellence in every project.
           </p>
           <div className="mt-6 flex space-x-4">

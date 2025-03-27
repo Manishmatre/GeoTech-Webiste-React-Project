@@ -68,7 +68,7 @@ const Header = () => {
         <Link to="/">
           <img alt="Buildo logo" className="mr-2 w-16" src={Logo} />
         </Link>
-        <span className={`text-2xl font-bold leading-6 text-gray-700`}>
+        <span className={`text-2xl font-bold leading-6 text-gray-700 `}>
           GeoTech Survey & Construction
         </span>
       </div>
